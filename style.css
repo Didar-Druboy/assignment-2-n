@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Monsieur+La+Doulaise&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Footer section starts from here***************************************************** */
+.footer{
+    background: rgb(26, 26, 26);
+}
+footer{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    gap: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+}
+footer .item1{
+    flex: 5;
+}
+footer .item2, .item3{
+    flex: 3;
+}
+footer .item1 h3{
+    color: rgb(230, 83, 60);
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 800;
+}
+footer p, a{
+    color: rgba(255, 255, 255, 0.5);
+}
+footer .item1 p{
+    font-size: 0.875rem;
+    margin: 20px 0;
+}
+footer .item2 h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+footer .item3 h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+footer p{
+    margin-bottom: 1.25rem;
+}
+footer p a{
+    font-size: 1.5rem;
+}
+.footer-caption{
+    max-width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-caption p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin: 44px 20px 0;
+    }
+}
+
