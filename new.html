@@ -3,11 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;            
+            border-radius: 18px;
+        }
+        .meet{
+            background: black;
+            padding: 4.5rem 0;
+        }
+        .meet h3{
+            font-size: 48px;
+            font-weight: 900;
+            color: #fff;
+            text-align: center;
+        }
+        .meet> p{
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.5);
+            margin: 14px 0 58px;
+            text-align: center;
+        }
+        .member-container{
+            max-width: 1060px;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 32%);
+            background: #1A1A1A;
+            padding: 20px;
+            border-radius: 18px;           
+            position: relative;
+        }
+        .member-container .member{
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);            
+            border-radius: 18px;
+        }
+        .member-description{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .member-description h4{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .member-description p{
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+
+        @media screen and (max-width: 576px){
+            .member-container{
+                display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(1, 100%);
+            }
+}
+    </style>
 </head>
 <body>
-
     <section class="meet">
         <h3>Meet Our Teem</h3>
         <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
@@ -62,32 +136,5 @@
             </div>
         </div>
     </section>
-    <section class="footer">
-        <footer>
-            <div class="item1">
-                <h3>Fitness Club</h3>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-            </div>
-            <div class="item2">
-                <h3>Get Started</h3>
-                <p><a href="">Service</a></p>
-                <p><a href="">Contact Us</a></p>
-                <p><a href="">Affiliate Program</a></p>
-                <p><a href="">About Us</a></p>
-            </div>
-            <div class="item3">
-                <h3>Get Started</h3>
-                <p><a href="">Platform</a></p>
-                <p><a href="">Fitness</a></p>
-                <p><a href="">Workout Library</a></p>
-                <p><a href="">App Design</a></p>
-            </div>
-            
-        </footer>
-        <div class="footer-caption">
-            <p>All right reserved @Fitness 2024</p>
-        </div>
-    </section>
-    
 </body>
 </html>

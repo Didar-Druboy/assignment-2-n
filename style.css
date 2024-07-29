@@ -11,6 +11,69 @@ a{
     text-decoration: none;
 }
 
+/* Meet member section starts from here *********************************************** */
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            
+    border-radius: 18px;
+}
+.meet{
+    background: black;
+    padding: 4.5rem 0;
+}
+.meet h3{
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+.meet> p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 14px 0 58px;
+    text-align: center;
+}
+.member-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 32%);
+    background: #1A1A1A;
+    padding: 20px;
+    border-radius: 18px;           
+    position: relative;
+}
+.member-container .member{
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);            
+    border-radius: 18px;
+}
+.member-description{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.member-description h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+.member-description p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* Footer section starts from here***************************************************** */
 .footer{
@@ -82,7 +145,20 @@ footer p a{
     footer{
         display: flex;
         flex-direction: column;
+        margin: 0px 20px;
+    }
+    .meet{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .member-container{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1060px){
+    footer{
         margin: 44px 20px 0;
     }
 }
-
