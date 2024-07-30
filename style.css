@@ -29,8 +29,40 @@ p{
     font-weight: 400;   
     line-height: 1.5rem;
 }
+
 a{
     text-decoration: none;
+}
+/* change habit section starts from here ****************************************************** */
+.change-habit{
+    background: #000000;
+    text-align: center;
+}
+.habit-description{
+    max-width: 670px;
+    margin: 0 auto;
+}
+.habit-description h3{
+    padding: 100px 0 14px;
+}
+.habit-card-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    gap: 25px;
+}
+.habit-card-container img{
+    border: 5px solid #1A1A1A;
+    border-radius: 50%;
+}
+.habit-card-container h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 0 6px;
+}
+.habit-card-container p{
+    line-height: 1rem;
 }
 /* run an extra time section starts from here ************************************** */
 .run{
@@ -262,6 +294,22 @@ footer p a{
 
 
 @media screen and (max-width: 576px){
+    .change-habit{
+        padding: 0px 20px;
+    }
+    .habit-description h3{
+        padding-top: 10px;
+    }
+    .habit-card-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .habit-card-container img{
+        width: 60%;
+    }
+    .habit-card-container p{
+        margin: 0 150px;
+    }
     .run-container{
         margin: 0px 20px;
         gap: 30px;
