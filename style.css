@@ -10,14 +10,105 @@
 a{
     text-decoration: none;
 }
+/* **** Calculator section starts from here ***************************************** */
+.calculator-heading-full{
+    background: #000000;
+
+}
+.calculator-heading-container{
+    max-width: 670px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+.calculator-heading-container h3{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.calculator-heading-container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+.calculator-full{
+    background: #222222;
+}
+.calculator-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 3.5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.calculator-chart{
+    flex: 1;
+}
+.calculate-your-bmi-container{
+    flex: 1;
+}
+.calculator-container h4{
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+table{
+    margin: 2rem 0;
+    border-collapse: collapse;
+    width: 80%;
+}
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+th {
+    font-size: 1rem;
+    font-weight: 500;
+}
+td{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.calculate-your-bmi-container p{
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+input, select {
+    width: 49%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+#sex{
+    width: 99%;
+}
+input[type="submit"]{
+    max-width: 224px;
+    padding: 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+option{
+    color: black;
+}
 
 /* Meet member section starts from here *********************************************** */
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;            
-    border-radius: 18px;
-}
+
 .meet{
     background: black;
     padding: 4.5rem 0;
@@ -48,6 +139,12 @@ img{
 }
 .member-container .member{
     position: relative;
+}
+.member> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            
+    border-radius: 18px;
 }
 .overlay {
     position: absolute;
@@ -142,23 +239,39 @@ footer p a{
 
 
 @media screen and (max-width: 576px){
-    footer{
-        display: flex;
+    .calculator-container{
         flex-direction: column;
-        margin: 0px 20px;
     }
-    .meet{
-        padding-left: 20px;
-        padding-right: 20px;
+    .calculator-heading-container, .calculator-container{
+        margin: 0px 20px;
     }
     .member-container{
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(1, 100%);
     }
+    .meet{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    
+    
+    
+    
 }
 @media screen and (min-width: 992px) and (max-width: 1060px){
+    .calculator-container{
+        flex-direction: column;
+    }
+    .calculator-heading-container, .calculator-container{
+        margin: 0px 20px;
+    }
     footer{
-        margin: 44px 20px 0;
+        margin: 0px 20px 0;
     }
 }
