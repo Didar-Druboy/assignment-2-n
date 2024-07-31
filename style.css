@@ -7,8 +7,7 @@
     color: #fff;
     
 }
-/* shared style ********************************************************** */
-input[type="submit"]{
+        input[type="submit"]{
     max-width: 224px;
     padding: 16px 40px;
     border-radius: 42px;
@@ -18,6 +17,7 @@ input[type="submit"]{
     font-size: 18px;
     font-weight: 600;
     color: rgb(255, 255, 255);
+    border: none;
 }
 h3{
     font-size: 3rem;
@@ -33,6 +33,113 @@ p{
 a{
     text-decoration: none;
 }
+.nav{
+    background: linear-gradient(to top, black, rgb(36, 35, 35), black);
+    background-blend-mode: overlay;
+
+}
+.nav-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+.site-name h3{
+    color: rgb(230, 83, 60);
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.menu-container ul{
+    display: flex;
+    list-style-type: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+    
+}
+.menu-container ul li{
+    margin-left: 3rem;
+    padding: 8px 20px;
+    
+    border-radius: 46px;
+}
+.menu-container ul li:first-child{
+    margin-left: 0;
+    background: rgb(230, 83, 60);
+}
+.menu-container ul li:first-child a{
+    background: rgb(230, 83, 60);
+}
+.menu-container a{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+/* ********************************************************* */
+
+.poster-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-text h3{
+    font-size: 5rem;
+    font-weight: 900;
+    
+}
+.poster-text p{  
+    margin: 1.75rem 0;
+}
+#download{
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+    margin-left: 10px;
+}
+.poster-image{
+    position: relative;
+}
+.poster-image h3{
+    font-size: 2.5rem;
+}
+.workout, .tutorial{
+    max-width: 220px;
+    padding: 10px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(57, 57, 57, 0.4);
+    backdrop-filter: blur(5px);
+}
+.workout{
+    position: absolute;
+    top: 120px;
+    right: -50px;
+}
+.tutorial{
+    position: absolute;
+    bottom: 65px;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tutorial h3{
+    font-size: 24px;
+    padding: 6px 0;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+    margin-right: 10px;
+}
+
 /* change habit section starts from here ****************************************************** */
 .change-habit{
     background: #000000;
@@ -294,6 +401,16 @@ footer p a{
 
 
 @media screen and (max-width: 576px){
+    .nav{
+        padding: 0px 20px;
+    }
+    .poster-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .menu-container{
+        display: none;
+    }
     .change-habit{
         padding: 0px 20px;
     }
