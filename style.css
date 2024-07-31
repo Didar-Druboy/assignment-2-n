@@ -460,6 +460,9 @@ footer p a{
         margin: 0px 20px;
         gap: 30px;
     }
+    .run-image>img{
+        object-fit: cover;
+    }
     .calculator-container, .run-container{
         flex-direction: column;
     }
