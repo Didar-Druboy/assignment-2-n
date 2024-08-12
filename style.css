@@ -35,6 +35,11 @@ a{
 }
 .nav{
     background: linear-gradient(to top, black, rgb(36, 35, 35), black);
+    /* background: linear-gradient(
+        rgb(17, 17, 17),
+        rgb(119, 119, 119),
+        rgb(17, 17, 17)
+    ); */
     background-blend-mode: overlay;
 
 }
@@ -63,7 +68,6 @@ a{
 .menu-container ul li{
     margin-left: 3rem;
     padding: 8px 20px;
-    
     border-radius: 46px;
 }
 .menu-container ul li:first-child{
@@ -76,6 +80,7 @@ a{
 .menu-container a{
     font-size: 1.125rem;
     font-weight: 400;
+    color: #fff;
 }
 .menu-toggle {
     display: none;
@@ -219,6 +224,7 @@ a{
 }
 
 /* **** Calculator section starts from here ***************************************** */
+
 .calculator-heading-full{
     background: #000000;
 
@@ -298,12 +304,64 @@ input, select {
 option{
     color: black;
 }
+/* Curve section starts here *************************************************** */
+.creation{
+    background: #222222;
+    padding: 50px 0px;
+}
+.creation-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+.creation-img{
+    flex: 3;         
+    background-image: url('/images/Bodyfitbyamy-13a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    
+    /* display: inline-block; */
+    /* overflow: hidden; */
+    
+}
+.creation-description{
+    flex: 4;
+}
+.creation-description h4{
+    margin: 10px 0px;
+    font-size: 1.5rem;
+}
+.creation hr{
+    margin: 20px 0 35px 0;
+}
+.curve-container {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background: black;
+    margin-top: 50px;
+}
+
+.curve-container svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 166px;
+}
+
+.curve-container .shape-fill {
+    fill: #222222;
+}
 
 /* Meet member section starts from here *********************************************** */
 
 .meet{
     background: black;
     padding: 4.5rem 0;
+    margin-top: 130px;
 }
 .meet h3{
     text-align: center;
@@ -468,6 +526,13 @@ footer p a{
     }
     .calculator-heading-container, .calculator-container{
         margin: 0px 20px;
+    }
+    .creation-container{
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    .creation-img{
+        min-height: 500px;
     }
     .member-container{
         display: grid;
