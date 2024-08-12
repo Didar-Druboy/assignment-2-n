@@ -317,8 +317,9 @@ option{
 }
 .creation-img{
     flex: 3;         
-    background-image: url('/images/Bodyfitbyamy-13a.jpg');
+    background-image: url('../images/exercise5.jpg');
     background-size: cover;
+    background-position: 46% 0%;
     background-repeat: no-repeat;
     border-radius: 18px;
     
