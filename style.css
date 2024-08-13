@@ -327,6 +327,9 @@ option{
     margin: 0 auto;
     display: flex;
     gap: 50px;
+    background-color: #000000;
+    padding: 2.5rem 3rem;
+    border-radius: 18px;
 }
 .creation-img{
     flex: 3;         
