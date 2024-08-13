@@ -159,6 +159,19 @@ a{
     border-radius: 50%;
     background-color: rgb(230, 83, 60);
     margin-right: 10px;
+    position: relative;
+    
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #fff; 
+    transform: rotate(90deg);
+    position: absolute;
+    left: 12px;
+    top: 10px;
 }
 
 /* change habit section starts from here ****************************************************** */
